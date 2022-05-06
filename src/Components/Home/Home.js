@@ -1,12 +1,13 @@
 import React from "react";
 import Menu from "../Menu/Menu";
-import Contenido from "../Contenido/Contenido";
+import Footer from "../Footer/Footer";
+
 import "./Home.css";
 const Home = () => {
   return (
-    <div>
+    <div className="container">
       <Menu />
-      <Contenido />
+      <Footer />
     </div>
   );
 };
