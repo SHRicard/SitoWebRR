@@ -3,12 +3,12 @@ import "./Menu.css";
 const Menu = () => {
   return (
     <div className="row">
-      <nav className="navbar navbar-expand-lg pt-4">
+      <nav className="navbar navbar-expand-lg pt-4 pb-5 mb-5 ">
         <div className="container-fluid">
           <h5>
-            <span className="logo-2">{"<"}&nbsp; </span>
-            <span className="logo">{"RRcode"}</span>
-            <span className="logo-2">&nbsp;{"/>"}</span>
+            <span className="text-font-2">{"<"}&nbsp; </span>
+            <span className="text-font">{"RRcode"}</span>
+            <span className="text-font-2">&nbsp;{"/>"}</span>
           </h5>
           <button
             className="navbar-toggler"

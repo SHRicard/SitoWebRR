@@ -1,18 +1,12 @@
-.logo-2 {
-    color:aqua;
-    font-weight: 800;
-}
-.logo{
-    font-family: 'Acme', sans-serif;
-    color: #0d6efd;
-}
+
 .link ul li{
 
 font-family: 'Bebas Neue', cursive;
 font-weight: 800;
 font-size: 1.2rem;
 
-}.link ul li a{
+}
+.link ul li a{
     color: #0d6efd;
     font-family: 'Bebas Neue', cursive;
     font-weight: 800;

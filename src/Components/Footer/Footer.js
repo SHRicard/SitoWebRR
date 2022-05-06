@@ -6,9 +6,9 @@ const Footer = () => {
       <div className="col-2 ">
         <div className="bg-dark">
           <h5 className="text-center">
-            <span className="logo-2">{"<"}&nbsp; </span>
-            <span className="logo">{"RRcode"}</span>
-            <span className="logo-2">&nbsp;{"/>"}</span>
+            <span className="text-font-2">{"<"}&nbsp; </span>
+            <span className="text-font">{"RRcode"}</span>
+            <span className="text-font-2">&nbsp;{"/>"}</span>
           </h5>
         </div>
       </div>
@@ -16,7 +16,12 @@ const Footer = () => {
         <p className="link text-center">2022 All rights reserved</p>
       </div>
       <div className="col-5">
-        <p className="link text-center">Iconos</p>
+        <p className="link text-center">
+          <i className=" mx-2  bi bi-facebook"></i>
+          <i className=" mx-2  bi bi-github"></i>
+          <i className=" mx-2  bi bi-linkedin"></i>
+          <i className=" mx-2  bi bi-youtube"></i>
+        </p>
       </div>
     </div>
   );
