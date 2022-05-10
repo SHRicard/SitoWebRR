@@ -10,7 +10,7 @@ const Contenido = () => {
             <span className="text-fff">Hola</span> , Soy Ricardo
             <span className="text-fff"> {"ツ"} </span>
           </h1>
-          <h2 className="text-font pt-3 pb-4 pt-4 fs-1">
+          <h2 className="text-font-Blanco pt-3 pb-4 pt-4 fs-1">
             Developer Full-Stack{" "}
           </h2>
           <p className="text-font-2  pb-5 ">
@@ -31,7 +31,7 @@ const Contenido = () => {
             <i className=" mx-2  bi bi-youtube"></i>
           </p>
         </div>
-        <div className="col text-end">
+        <div className="col-sm text-center col-lg text-end">
           <img
             src={ImgPortada}
             alt="portada"

@@ -7,7 +7,7 @@ const Menu = () => {
         <div className="container-fluid">
           <h5>
             <span className="text-font-2">{"<"}&nbsp; </span>
-            <span className="text-font">{"RRcode"}</span>
+            <span className="text-font-Blanco">{"RRcode"}</span>
             <span className="text-font-2">&nbsp;{"/>"}</span>
           </h5>
           <button
