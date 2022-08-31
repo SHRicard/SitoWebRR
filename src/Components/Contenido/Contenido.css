@@ -1,4 +1,94 @@
-.ImgPortada{
-    width: 70%;
-    Height: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.redes{
+    font-size: 30px;
+   
+}
+.bi-github{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.bi-github:hover{
+    color: rgba(255, 255, 255, 0.657);
+
+    font-size: 35px;
+    transition: 0.5s;
+
+}
+.bi-youtube{
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+}
+.bi-youtube:hover{
+    color: red;
+
+    font-size: 35px;
+    transition: 0.5s;
+
+}
+.bi-linkedin{
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+}
+.bi-linkedin:hover{
+    color: rgb(12, 16, 243);
+
+    font-size: 35px;
+    transition: 0.5s;
+
+}
+.bi-facebook{
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+}
+.bi-facebook:hover{
+    color: rgb(12, 16, 243);
+
+    font-size: 35px;
+    transition: 0.5s;
+
+}
+.bi-whatsapp{
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+}
+.bi-whatsapp:hover{
+    color: rgb(6, 155, 6);
+
+    font-size: 35px;
+    transition: 0.5s;
+
 }

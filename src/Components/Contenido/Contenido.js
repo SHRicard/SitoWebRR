@@ -1,43 +1,61 @@
 import React from "react";
-import ImgPortada from "../Img/ImgHome.png";
+import PacMan from "./pacman.jpg";
+import Animacion from "../Animacion/Animacion.js";
 import "./Contenido.css";
 const Contenido = () => {
   return (
-    <div className="container ">
-      <div className="row">
-        <div className="col-lg-4 text-center pt-5">
-          <h1 className="fs-1 text-font-2 ">
-            <span className="text-fff">Hola</span> , Soy Ricardo
-            <span className="text-fff"> {"ツ"} </span>
-          </h1>
-          <h2 className="text-font-Blanco pt-3 pb-4 pt-4 fs-1">
-            Developer Full-Stack{" "}
+    <div className="row pt-5">
+      <div className="col-6">
+        {/* //////Start title//////// */}
+        <div className="title ">
+          <h2 className="text-Acme-Azul fs-1 ">
+            Hola!&nbsp;&nbsp;Soy{" "}
+            <small className="text-white  fs-1">Ricardo</small>
+            &nbsp;&nbsp;&nbsp;{"="}
+            <small className="text-white ">&nbsp;{")"}</small>
           </h2>
-          <p className="text-font-2  pb-5 ">
-            Desde Argentina, activamente enfocado al diseño y maquetación
-            front-end. Busco aprender cosas nuevas constantemente, valoro la
-            simplicidad y la eficiencia.
-          </p>
+        </div>
+        {/* //////End title//////// */}
 
-          <button type="button" className="btn btn-outline-primary btn-sm ">
-            <small className="text-font fs-4 ">
-              &nbsp;&nbsp;&nbsp;Empecemos!&nbsp;&nbsp;
-            </small>
+        {/* //////Start title animation//////// */}
+        <Animacion />
+
+        {/* //////End title animation//////// */}
+        <div className="text-white text-Acme fs-5 ">
+          Desde Argentina, activamente enfocado al diseño y maquetación <br />
+          &nbsp;
+          <small className=" text-Acme text-Acme-Azul fs-5 ">Front-End</small>
+          .&nbsp; Busco aprender cosas nuevas constantemente , valoro la
+          simplicidad y la eficiencia.
+        </div>
+        <div className="">
+          <small className="text-white text-Acme fs-5 ">
+            Te invito a jugar un ratito mi poke PacMan
+          </small>
+          <small></small>
+        </div>
+        <div className="pt-3 pb-3">
+          <button type="button" className="col-6 btn btn-outline-primary">
+            <small className=" text-Acme text-white fs-5 ">¡Comencemos!</small>
           </button>
-          <p className="link pt-3">
-            <i className="  mx-2  bi bi-facebook"></i>
-            <i className=" mx-2  bi bi-github"></i>
-            <i className=" mx-2  bi bi-linkedin"></i>
-            <i className=" mx-2  bi bi-youtube"></i>
-          </p>
         </div>
-        <div className="col-sm text-center col-lg text-end">
-          <img
-            src={ImgPortada}
-            alt="portada"
-            className="ImgPortada img-fluid"
-          />
+        <div
+          className="redes
+        "
+        >
+          <i class="bi bi-github" />
+          &nbsp; &nbsp; &nbsp;
+          <i class="bi bi-youtube" />
+          &nbsp; &nbsp; &nbsp;
+          <i class="bi bi-linkedin" />
+          &nbsp; &nbsp; &nbsp;
+          <i class="bi bi-whatsapp" />
+          &nbsp; &nbsp; &nbsp;
+          <i class="bi bi-facebook" />
         </div>
+      </div>
+      <div className="col-6 text-center">
+        <img src={PacMan} alt="noIMG" className="img-fluid" />
       </div>
     </div>
   );

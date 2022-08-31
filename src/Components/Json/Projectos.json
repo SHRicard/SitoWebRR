@@ -1,7 +1,1 @@
-{
-  "Pokemon": {
-    "nombre": "Pokemon",
-    "objetivos": "Construir una App utlizando React, Redux, Node y Sequelize.",
-    "tecnologías": ["React", " Redux ", "Express ", "Sequelize", "Postgres"]
-  }
-}
+

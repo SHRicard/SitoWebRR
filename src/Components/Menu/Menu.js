@@ -1,15 +1,26 @@
 import React from "react";
+
 import "./Menu.css";
 const Menu = () => {
   return (
-    <div className="row">
-      <nav className="navbar navbar-expand-lg pt-4 pb-5 mb-5 ">
-        <div className="container-fluid">
-          <h5>
-            <span className="text-font-2">{"<"}&nbsp; </span>
-            <span className="text-font-Blanco">{"RRcode"}</span>
-            <span className="text-font-2">&nbsp;{"/>"}</span>
-          </h5>
+    <div className="container  p-0 m-0">
+      <div className="row">
+        <div className="col-12 text-center">
+          <h4 className=" text-Acme-Azul fs-5 pt-3">
+            {"<Front-End/>"}
+            <small className="text-white  fs-4"> RRcode </small>
+            {"<Back-End/>"}
+          </h4>
+        </div>
+        {/* ///////////////////Star Menu ///////////////////// */}
+        <nav className="navbar navbar-expand-lg navbar fs-6 text-Acme-Azul bg-black">
+          <a className="navbar-brand" href="#">
+            <h5 className="text-center bg-dark">
+              <span className="text-Acme-Azul fs-4">{"<"}&nbsp; </span>
+              <span className="text-white">{"RRcode"}</span>
+              <span className="text-Acme-Azul fs-4">&nbsp;{"/>"}</span>
+            </h5>
+          </a>
           <button
             className="navbar-toggler"
             type="button"
@@ -21,70 +32,57 @@ const Menu = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div
-            className="collapse navbar-collapse link text-center"
-            id="navbarSupportedContent"
-          >
-            <ul className="navbar-nav ms-auto mb-2 ">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ms-auto  mb-2 mb-lg-0 fs-5">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="{}">
-                  Servicios
+                <a className="nav-link disabled">Disabled</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
+                  Home
                 </a>
               </li>
-              <li className=" nav-item  ">
-                <a className="nav-link" href="{}">
-                  Cursos
-                </a>
-              </li>
-              <li className=" nav-item  ">
-                <a className="nav-link" href="{}">
-                  Tecnologias
-                </a>
-              </li>
-              <li className=" nav-item  ">
-                <a className="nav-link" href="{}">
-                  Contacto
-                </a>
-              </li>
-              <li className=" nav-item  ">
-                <a className="nav-link" href="{}">
-                  Curriculum
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Link
                 </a>
               </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="{}"
+                  href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Proyectos
+                  Dropdown
                 </a>
-                <ul
-                  className="dropdown-menu text-center "
-                  aria-labelledby="navbarDropdown"
-                >
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="{}">
-                      Pokemon Api
+                    <a className="dropdown-item" href="#">
+                      Action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Another action
                     </a>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="{}">
-                      Country Api
+                    <a className="dropdown-item" href="#">
+                      Something else here
                     </a>
                   </li>
                 </ul>
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   );
 };
