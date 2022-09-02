@@ -1,15 +1,13 @@
 import React from "react";
-import Menu from "../Menu/Menu";
-import Contenido from "../Contenido/Contenido.js";
-import Footer from "../Footer/Footer";
-
+import Entrada from "../Entrada/Entrada.js";
+import Container from "../Container/Container.js";
+import Menu from "../Menu/Menu.js";
 import "./Home.css";
 const Home = () => {
   return (
-    <div className="container">
-      <Menu />
-      <Contenido />
-      <Footer />
+    <div className="container ">
+      <Entrada />
+      <Container />
     </div>
   );
 };
