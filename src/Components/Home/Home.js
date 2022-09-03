@@ -6,8 +6,17 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="container ">
-      <Entrada />
-      <Container />
+      <div className="row">
+        <div className="col-12 pt-2">
+          <Entrada />
+        </div>
+        <div className="col-11 pt-1">
+          <Container />
+        </div>
+        <div className="col-1">
+          <Menu />
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,4 +1,18 @@
 body{
- 
-    background-color: rgb(61, 61, 61);
+
+
+     font-family: 'Teko', sans-serif;
+     background-color: rgb(61, 61, 61);
 }
+.iconsMenu{
+
+     li{
+     list-style: none;
+     }
+      img{
+          width: 50px;
+          cursor: pointer;
+      }
+}
+
+
