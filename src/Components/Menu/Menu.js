@@ -1,42 +1,58 @@
-import React from "react";
-import Home from "../Icon/Home.png";
-import Estudios from "../Icon/Estudios.png";
-import Mail from "../Icon/Mail.png";
-import Proyectos from "../Icon/Proyectos.png";
-import SobreMi from "../Icon/SobreMi.png";
-
-import "./Menu.css";
+import React, { useState } from "react";
 
 const Menu = () => {
-  return (
-    <div
-      className="d-flex align-items-end flex-column bd-highlight mb-3"
-      style={{ height: 500 }}
-    >
-      <div className="iconsMenu bg-warning rounded-3">
-        <ul className="">
-          <li className=" bd-highlight ">
-            <img src={Home} alt="noImg" />
-          </li>
-          <li className=" bd-highlight">
-            <img src={Estudios} alt="noImg" />
-          </li>
-          <li className=" bd-highlight">
-            <img src={Mail} alt="noImg" />
-          </li>
-          <li className=" bd-highlight">
-            <img src={Proyectos} alt="noImg" />
-          </li>
-          <li className=" bd-highlight">
-            <img src={SobreMi} alt="noImg" />
-          </li>
-        </ul>
-      </div>
-      <div className="mt-auto  bd-highlight  bg-warning  rounded-3">
-        <ul>
-          <li className="p-2 bd-highlight">{"<"}</li>
+  const [isOpen, setIsOpen] = useState(false);
 
-          <li className="p-2 bd-highlight">{">"}</li>
+  const handleClick = () => {
+    setIsOpen((isOpen) => !isOpen);
+  };
+  let toggleClassCheck = isOpen ? "active" : null;
+
+  return (
+    <div className="containerNavigation">
+      <div className={`navigation ${toggleClassCheck}`}>
+        <div onClick={handleClick} className="menu-toggle"></div>
+        <ul>
+          <li className="list " style={{ clr: "#f44336" }}>
+            <a href="#">
+              <span className="icon">
+                <i class="bi bi-house-fill"></i>
+              </span>
+              <span className="text">Home</span>
+            </a>
+          </li>
+          <li className="list " style={{ clr: "#369ef4" }}>
+            <a href="#">
+              <span className="icon">
+                <i class="bi bi-person-circle"></i>
+              </span>
+              <span className="text">About Me</span>
+            </a>
+          </li>
+          <li className="list" style={{ clr: "#369ef4" }}>
+            <a href="#">
+              <span className="icon">
+                <i class="bi bi-folder-symlink-fill"></i>
+              </span>
+              <span className="text">Proyectos</span>
+            </a>
+          </li>
+          <li className="list">
+            <a href="#">
+              <span className="icon">
+                <i class="bi bi-mortarboard-fill"></i>
+              </span>
+              <span className="text">Estudios</span>
+            </a>
+          </li>
+          <li className="list">
+            <a href="#">
+              <span className="icon">
+                <i class="bi bi-envelope-fill"></i>
+              </span>
+              <span className="text">Contacto</span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
