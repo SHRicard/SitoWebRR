@@ -1,5 +1,5 @@
 import React from "react";
-import "./Entrada.css";
+
 const Entrada = () => {
   return (
     <div className="row">

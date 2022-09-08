@@ -1,8 +1,7 @@
-:root {
-     --red: #F65959;  
-     --blue: #0c2f13;   
-
-   }
+*{
+     padding:0;
+     margin: 0;
+}
 
 ///////////Menu//////
 
@@ -19,8 +18,9 @@
                }
              
                  
-             .active{
-                    width: 250px !important;
+             .open{
+                    width: 200px !important;
+                    
                     
                } 
                .navigation .menu-toggle{
@@ -71,6 +71,8 @@
                     display: flex;
                     flex-direction: column;
                     gap:10px;
+                    margin: 0;
+                    padding: 0;
                     width: 100%;
                }
                .navigation ul li{
@@ -99,17 +101,20 @@
                     border-radius:10px;
                     font-size: 1.75em;
                     color: #222;
-                    // background-color: var(--clr);
 
 
                }
-               .navigation ul li.active a .icon{
-                    color: rgb(255, 252, 252);
-                     background: var(--red)
+               .Isactive{
+                    color: rgb(195, 12, 12);
+                    background: var(--clr)
+               }
+               // .navigation ul li.Isactive a .icon{
+               //      color: rgb(255, 252, 252);
+               //       background: var(--clr)
                    
 
 
-               }
+               // }
 
 
 
@@ -118,5 +123,5 @@ body{
 
 
      font-family: 'Teko', sans-serif;
-     background-color: rgb(61, 61, 61);
+     background-color: rgba(61, 61, 61, 0.195);
 }
