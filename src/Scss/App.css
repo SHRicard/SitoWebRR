@@ -5,7 +5,7 @@
 
 .containerNavigation .navigation {
   position: fixed;
-  inset: 20px 0 20px 20px;
+  inset: 100px 0 20px 20px;
   width: 75px;
   background: #fff;
   transition: 0.5s;
@@ -13,8 +13,8 @@
   justify-content: center;
   align-items: center;
 }
-.containerNavigation .active {
-  width: 250px !important;
+.containerNavigation .open {
+  width: 200px !important;
 }
 .containerNavigation .navigation .menu-toggle {
   position: absolute;
@@ -59,6 +59,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 .containerNavigation .navigation ul li {
@@ -88,12 +90,42 @@
   font-size: 1.75em;
   color: #222;
 }
-.containerNavigation .navigation ul li.active a .icon {
-  color: rgb(255, 252, 252);
+.containerNavigation .active .icon {
+  color: rgb(242, 242, 242);
   background: var(--clr);
+}
+.containerNavigation .navigation ul li a .icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr);
+  filter: blur(8px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.containerNavigation .navigation ul li.active a .icon::before {
+  opacity: 0.5;
+}
+.containerNavigation .navigation ul li a .text {
+  position: relative;
+  padding: 0 30px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: #333;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.containerNavigation .navigation.open ul li a .text {
+  opacity: 1;
+  visibility: visible;
 }
 
 body {
   font-family: "Teko", sans-serif;
-  background-color: rgb(61, 61, 61);
+  background-color: rgba(61, 61, 61, 0.195);
 }/*# sourceMappingURL=App.css.map */

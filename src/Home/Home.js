@@ -1,20 +1,18 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-
-import Entrada from "./Entrada.js";
-import Menu from "./Menu.js";
+import Navigation from "../Components/Navigation.js";
 const Home = () => {
   return (
     <div className="container-fluid">
-      <div className="col-12 bg-danger">
-        <Entrada />
+      <div className="row">
+        <div className="col-2 pt-3">
+          <Navigation />
+        </div>
+        <div className="col">
+          <Outlet />
+        </div>
+        <div className="col"></div>
       </div>
-      <div className="col-12 ">
-        <Menu />
-      </div>
-      <select>
-        <Outlet />
-      </select>
     </div>
   );
 };
