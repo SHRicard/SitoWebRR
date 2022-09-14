@@ -3,126 +3,48 @@
   margin: 0;
 }
 
-.containerNavigation .navigation {
-  position: fixed;
-  inset: 100px 0 20px 20px;
-  width: 75px;
+.nav {
   background: #fff;
-  transition: 0.5s;
+  width: 75px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 33px;
+  padding-top: 28px;
+  border-radius: 10px;
 }
-.containerNavigation .open {
-  width: 200px !important;
-}
-.containerNavigation .navigation .menu-toggle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 23px;
-}
-.containerNavigation .navigation .menu-toggle::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  background: #333;
-  transform: translateY(-8px);
-  transition: 0.5s;
-}
-.containerNavigation .navigation.active .menu-toggle::before {
-  transform: translateY(0px) rotate(45deg);
-}
-.containerNavigation .navigation .menu-toggle::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  background: #333;
-  transform: translateY(8px);
-  transition: 0.5s;
-  box-shadow: 0 -8px 0 #333;
-}
-.containerNavigation .navigation.active .menu-toggle::after {
-  transform: translateY(0px) rotate(-45deg);
-  box-shadow: 0 0 0 #333;
-}
-.containerNavigation .navigation ul {
+.nav .list-ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
-.containerNavigation .navigation ul li {
+.nav .list-ul .list-li {
   list-style: none;
   position: relative;
   width: 100%;
   height: 60px;
   padding: 0 10px;
-  transition: 0.5;
+  transition: 0.8s;
 }
-.containerNavigation .navigation ul li a {
-  position: relative;
+.nav .list-ul .list-li .icon {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
-  text-align: center;
-  text-decoration: none;
-}
-.containerNavigation .navigation ul li a .icon {
-  position: relative;
-  display: block;
   min-width: 55px;
   height: 55px;
   line-height: 60px;
   transition: 0.5s;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 1.75em;
-  color: #222;
+  color: rgb(79, 76, 76);
 }
-.containerNavigation .active .icon {
-  color: rgb(242, 242, 242);
+.nav .isActive .icon {
   background: var(--clr);
+  transform: translateX(30px) !important;
 }
-.containerNavigation .navigation ul li a .icon::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--clr);
-  filter: blur(8px);
-  opacity: 0;
-  transition: 0.5s;
-}
-.containerNavigation .navigation ul li.active a .icon::before {
-  opacity: 0.5;
-}
-.containerNavigation .navigation ul li a .text {
-  position: relative;
-  padding: 0 30px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  color: #333;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
-}
-.containerNavigation .navigation.open ul li a .text {
-  opacity: 1;
-  visibility: visible;
+.nav .list-ul .list-li .isActive .icon {
+  color: rgb(255, 255, 255);
 }
 
 body {

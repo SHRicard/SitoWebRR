@@ -2,6 +2,7 @@ import * as React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Entrada from "./Components/Entrada.js";
+import Menu from "./Components/Menu";
 
 import Home from "./Home/Home.js";
 import Contacto from "./Page/Contacto.js";
@@ -16,8 +17,8 @@ function App() {
       <BrowserRouter>
         <Entrada />
         <Routes>
-          <Route path="/" element={<Home />}>
-            {/* <Route index element={<Home />} /> */}
+          <Route path="/" element={<Menu />}>
+            <Route index element={<Home />} />
             <Route path="Home" element={<Home />} />
             <Route path="Proyecto" element={<Proyecto />} />
             <Route path="Estudios" element={<Estudios />} />

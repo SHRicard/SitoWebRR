@@ -17,11 +17,14 @@ const Navigation = () => {
           <ul className="pt-5">
             <li className="list ">
               <NavLink
-                className={({ isActive }) => (isActive ? "active" : null)}
+                className={({ isActive }) => (isActive ? "active" : "")}
                 to="/Home"
               >
                 <span className="icon " style={{ "--clr": "#f44336" }}>
-                  <i className="icon bi bi-house-fill" />
+                  <i
+                    className="icon bi bi-house-fill"
+                    style={{ "--clr2": "#fff" }}
+                  />
                 </span>
                 <span className="text" style={{ "--clr": "#f44336" }}>
                   Home
