@@ -1,17 +1,27 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
+import Perfil from "./Perfil.js";
 
 const Menu = () => {
   return (
-    <div className="container-fluid ">
-      <div className="row pt-5 ">
-        <div className="col d-flex pt-5 align-items-center ">
+    <div className="container">
+      <div className="row pt-1 ">
+        <div className="col-3 bg-danger">
+          <Perfil />
+        </div>
+        <div className="col-8 ">
+          <section className=" bg-danger">
+            <Outlet />
+          </section>
+        </div>
+
+        <div className="col-1 bg-danger d-flex pt-2 pb-2 justify-content-center  align-items-center ">
           <div className="bg-dark nav ">
             <ul className="list-ul">
               <li className="list-li ">
                 <NavLink
                   className={({ isActive }) => (isActive ? "isActive" : "")}
-                  to="/Home"
+                  to="Home"
                 >
                   <span className="icon" style={{ "--clr": "#f44336 " }}>
                     {/* home */}

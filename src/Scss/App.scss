@@ -5,64 +5,150 @@
 
 ///////////Menu//////
 .nav{     
-     background: #fff;
-    width: 75px;
-     height: 400px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding-right: 33px;
-     padding-top: 28px;
-     border-radius: 10px;
-
-   .list-ul{
-     display: flex;
-     flex-direction: column;
-     gap: 10px;
-
-    }
-    .list-ul .list-li{
-     list-style: none;
-     position: relative;
-     width: 100%;
-     height: 60px;
-     padding: 0 10px;
-     transition: 0.8s;
+             background: #fff;
+             width: 75px;
+             height: 400px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             padding-right: 33px;
+             padding-top: 28px;
+             border-radius: 10px;
      
-    }
-    .list-ul .list-li .icon{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     min-width: 55px;
-     height: 55px;
-     line-height: 60px;
-     transition: 0.5s;
-     border-radius:5px;
-     font-size: 1.75em;
-     color:rgb(79, 76, 76);
-}
-
-
-.isActive .icon{
-      background: var(--clr) ;
-
-     transform: translateX(30px) !important;
+     .list-ul{
+             display: flex;
+             flex-direction: column;
+             gap: 10px;
+           }
     
+     .list-ul .list-li{
+              list-style: none;
+              position: relative;
+              width: 100%;
+              height: 60px;
+              padding: 0 10px;
+              transition: 0.8s;
+     }
+     
+     .list-ul .list-li .icon{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               min-width: 55px;
+               height: 55px;
+               line-height: 60px;
+               transition: 0.5s;
+               border-radius:5px;
+               font-size: 1.75em;
+               color:rgb(79, 76, 76);
+          }
 
+     .isActive .icon{
+               background: var(--clr) ;
+               transform: translateX(-30px) !important;
+          } 
 
-
-} 
-.list-ul .list-li .isActive .icon{
-     color: rgb(255, 255, 255);
+     .list-ul .list-li .isActive .icon{
+              color: rgb(255, 255, 255);
 
 }
 
 }
 
-body{
+////////////////Switch///////////////////
+.switch{
+     // .toggle{
+     //           position: relative !important;
+     //           display: block !important;
+     //           width: 320px;
+     //           height: 160px;
+     //           border-radius: 160px;
+     //           background: #222;
+     //           transition: 0.5s;
+     //           box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+     //                       inset 0 8px 8px rgba(0, 0, 0, 0.1),
+     //                       inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+     //           cursor: pointer;
+     // }
+
+     // .toggle .indicador{
+     //           position: absolute;
+     //           top: 0;
+     //           left: 0;
+     //           width: 160px;
+     //           height: 160px;
+     //           background: linear-gradient(to bottom,#444,#222);
+     //           border-radius: 50%;
+     //           transform: scale(0.9) ;
+     //           box-shadow:  0  8px 40px rgba(0, 0, 0, 0.5) ,
+     //                       inset 0  4px 4px rgba(255, 255, 255, 0.2),
+     //                       inset 0 -4px 4px rgba(255, 255, 255, 0.2) !important;
+     //           transition: 0.5s;
+     //                     }
+
+   &{
+               background: #343d5b;
+               border-radius: 1000px;
+               border: none;
+               position: relative;
+               cursor: pointer;
+               display: flex;
+               outline: none;
+          }
+
+          &::after{
+               content: "";
+               display: block;
+               width: 30px;
+               height: 30px;
+               position: absolute;
+               background: #f1f1f1;
+               top:0;
+               left: 0;
+               right: unset;
+               border-radius: 100px;
+               transition: -3s ease all;
+               box-shadow: 0px 0px 2px 2px rgb(0,0, 0, 0.2);
+           }
 
 
-     font-family: 'Teko', sans-serif;
-     background-color: rgba(61, 61, 61, 0.195);
+           &.active {
+               color: black;
+               background: orange;
+               &::after{
+                    right: 0; 
+                    left: unset;
+               }
+          }
+
+
+          span{
+               width: 30px;
+               height: 30px;
+               line-height: 30px;
+               display: block;
+               background: none;
+               color: #fff;
+          }
+    
+}
+
+
+
+
+
+.moon{
+     background: rgb(34, 32, 32);
+
+}
+.sum{
+     background:rgb(235, 231, 1) ;
+}
+
+body {
+    font-family: 'Teko', sans-serif;
+
+
+
+    
 }
