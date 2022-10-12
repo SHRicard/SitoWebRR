@@ -6,11 +6,11 @@ const Menu = () => {
   return (
     <div className="container">
       <div className="row pt-1 ">
-        <div className="col-3 bg-danger">
+        <div className="col-4 bg-primary">
           <Perfil />
         </div>
-        <div className="col-8 ">
-          <section className=" bg-danger">
+        <div className="col-7 ">
+          <section className=" bg-warning">
             <Outlet />
           </section>
         </div>

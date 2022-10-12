@@ -1,7 +1,13 @@
 import React from "react";
-import Main from "./Main.png";
+
 const Perfil = () => {
-  return <div className="">Perfil asd</div>;
+  return (
+    <div className="perfil ">
+      <div className="card-Perfil">
+        <div className="lines"></div>
+      </div>
+    </div>
+  );
 };
 
 export default Perfil;

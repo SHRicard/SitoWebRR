@@ -2,7 +2,6 @@ import * as React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Entrada from "./Components/Entrada.js";
-import Perfil from "./Components/Perfil.js";
 import Menu from "./Components/Menu.js";
 import Home from "./Home/Home.js";
 import Contacto from "./Page/Contacto.js";
